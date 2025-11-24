@@ -5,9 +5,9 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.g.maplocalleader = "\\"
 vim.diagnostic.config({
-    virtual_text = false,
-    signs = false,
-    underline = false,
-    update_in_insert = false,
+    virtual_text = true,
+    signs = true,
+    underline = true,
+    update_in_insert = true,
 })
 
