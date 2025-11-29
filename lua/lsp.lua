@@ -46,3 +46,18 @@ vim.lsp.config("gopls", {
 })
 
 vim.lsp.enable("gopls")
+
+vim.lsp.config("postgres_lsp", {
+    cmd = { "postgres-language-server", "lsp-proxy" },
+    filetypes = { "sql" },
+    root_markers = { "postgres-language-server.jsonc" },
+
+    -- Add settings here if you want to override defaults:
+    -- settings = {
+    --     postgres_lsp = {
+    --     },
+    -- },
+})
+
+vim.lsp.enable("postgres_lsp")
+
